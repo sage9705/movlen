@@ -3,8 +3,9 @@ import os
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QPushButton, QLabel, QFileDialog, QMessageBox, QProgressBar
 )
-from moviepy.editor import VideoFileClip
 from PyQt5.QtCore import Qt, QThread, pyqtSignal
+
+from moviepy.editor import VideoFileClip
 
 class VideoLengthCalculator(QWidget):
     def __init__(self):
@@ -29,10 +30,15 @@ class VideoLengthCalculator(QWidget):
 
         self.progressBar = QProgressBar(self)
         self.progressBar.setAlignment(Qt.AlignCenter)
-        self.progressBar.setValue(0)
         layout.addWidget(self.progressBar)
 
         self.setLayout(layout)
+
+        script_dir = os.path.dirname(os.path.realpath(__file__))
+        css_path = os.path.join(script_dir, 'styles.css')
+
+        with open(css_path, 'r') as f:
+            self.setStyleSheet(f.read())
 
     def showDialog(self):
         folder = QFileDialog.getExistingDirectory(self, 'Select Folder')
