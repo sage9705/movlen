@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Video Length Calculator is a simple graphical user interface (GUI) application I built with PyQt5. It allows users to select a folder containing video files and calculates the total duration of all the video files in that folder. The application supports various video formats and provides a progress bar to track the progress of the calculation.
+The Video Length Calculator (MovLen) is a simple graphical user interface (GUI) application I built with PyQt5. It allows users to select a folder containing video files and calculates the total duration of all the video files in that folder. The application supports various video formats and provides a progress bar to track the progress of the calculation.
 
 ## Features
 
