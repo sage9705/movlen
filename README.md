@@ -14,6 +14,9 @@ The Video Length Calculator (MovLen) is a simple graphical user interface (GUI) 
 - Skips files that are not of the specified video types.
 - Error handling and user-friendly messages for unsupported files or issues.
 
+## Updates
+- In this new update, I've improved the UI (a bit)
+
 ## Motivation
 
 The motivation behind creating this application was to provide an easy-to-use tool for users who need to quickly calculate the total length of multiple video files without manually adding up individual durations. This can be particularly useful for content creators, educators, or anyone managing a collection of videos. I got the idea to do this when I wanted to find out the total length of different tutorial videos I have in a folder. I didn't want to do the donkey work and this is the result. The GUI ensures that even users without technical expertise can efficiently use the tool. There's not much to it.
