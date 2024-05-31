@@ -12,7 +12,7 @@ class VideoLengthCalculator(QWidget):
         self.initUI()
 
     def initUI(self):
-        self.setWindowTitle('Video Length Calculator')
+        self.setWindowTitle('MovLen')
         self.setGeometry(100, 100, 400, 200)
 
         layout = QVBoxLayout()
